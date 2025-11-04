@@ -33,6 +33,6 @@ Ele foi desenvolvido em **HTML + CSS**, com tema inspirado na identidade visual 
 ---
 
 ## 📬 Contato
-📧 [joaopauloleonardo@gmail.com](mailto:joaopauloleonardo@gmail.com)  
+📧 [joaopauloleonardo@gmail.com](mailto:joao.leonard@outlook.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/joaopauloleonardo)  
-💻 [GitHub](https://github.com/joaopauloleonardo)
+💻 [GitHub](https://github.com/joaoleon)
