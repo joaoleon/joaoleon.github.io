@@ -187,7 +187,6 @@ body {
   color: #0b1b3b;
 }
 
-
 /* ------------------------------------------------------------
    🧭 04. SEÇÕES
 ------------------------------------------------------------ */
@@ -196,6 +195,7 @@ body {
   max-width: var(--max-width);
   margin: auto;
   animation: fadeInUp 1s ease both;
+  scroll-margin-top: 80px; /* evita sobreposição com navbar fixa */
 }
 .section--alt {
   background: var(--color-bg-alt);
@@ -247,7 +247,27 @@ body {
 }
 
 /* ------------------------------------------------------------
-   🗺️ 06. PORTFÓLIO
+   📚 06. PUBLICAÇÕES ACADÊMICAS
+------------------------------------------------------------ */
+#publicacoes .card h4 {
+  font-size: 1rem;
+  color: var(--color-dark);
+  margin-bottom: 0.6rem;
+}
+#publicacoes .card p {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+#publicacoes .btn {
+  margin-top: 0.8rem;
+}
+@media (prefers-color-scheme: dark) {
+  #publicacoes .card h4 { color: var(--color-accent); }
+  #publicacoes .card p { color: var(--color-text); }
+}
+
+/* ------------------------------------------------------------
+   🗺️ 07. PORTFÓLIO
 ------------------------------------------------------------ */
 .portfolio-grid {
   display: grid;
@@ -285,7 +305,7 @@ body {
 }
 
 /* ------------------------------------------------------------
-   💬 07. CONTATO
+   💬 08. CONTATO
 ------------------------------------------------------------ */
 .center { text-align: center; }
 
@@ -319,7 +339,29 @@ body {
 }
 
 /* ------------------------------------------------------------
-   ⚙️ 08. FOOTER
+   📄 09. CURRÍCULOS (CV + LATTES)
+------------------------------------------------------------ */
+.curriculos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 1.5rem;
+}
+.curriculos .btn {
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  transition: var(--transition);
+}
+.curriculos .btn:hover {
+  background: var(--color-accent);
+  color: var(--color-dark);
+}
+
+/* ------------------------------------------------------------
+   ⚙️ 10. FOOTER
 ------------------------------------------------------------ */
 .footer {
   text-align: center;
@@ -334,7 +376,7 @@ body {
 }
 
 /* ------------------------------------------------------------
-   ✨ 09. ANIMAÇÕES
+   ✨ 11. ANIMAÇÕES
 ------------------------------------------------------------ */
 @keyframes fadeInUp {
   from {
