@@ -17,25 +17,26 @@
 </head>
 
 <body>
-  <!-- ================================
-       🔹 NAVBAR FIXA
-  =================================== -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="brand">João Leonardo</a>
-      <div class="nav-links">
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#portfolio">Portfólio</a>
-        <a href="#contato">Contato</a>
-        <span class="lang-switch">
-          <a href="index.html" class="active">PT</a> |
-          <a href="en.html">EN</a> |
-          <a href="es.html">ES</a>
-        </span>
-      </div>
+<!-- ================================
+     🔹 NAVBAR FIXA
+=================================== -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="brand">João Leonardo</a>
+    <div class="nav-links">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#publicacoes">Publicações</a>
+      <a href="#contato">Contato</a>
+      <span class="lang-switch">
+        <a href="index.html" class="active">PT</a> |
+        <a href="en.html">EN</a> |
+        <a href="es.html">ES</a>
+      </span>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- ================================
        🔹 HERO SECTION
@@ -121,7 +122,47 @@
       </div>
     </div>
   </section>
+ 
+  <!-- ================================
+       🔹 PUBLICAÇÕES ACADÊMICAS
+  =================================== -->
+  <section id="publicacoes" class="section">
+    <div class="section-content">
+      <h3>Publicações e Trabalhos</h3>
+      <p>Principais artigos, relatórios e capítulos publicados ou apresentados em eventos acadêmicos.</p>
 
+      <div class="cards">
+        <!-- Exemplo 1 -->
+        <div class="card">
+          <h4>📘 Leonardo, J. P. P. (2024). <i>Violência armada e desigualdades territoriais no Rio de Janeiro (2016–2023)</i>.</h4>
+          <p>Artigo submetido à Revista Brasileira de Estudos de População (ABEP). Analisa a relação entre fatores sociodemográficos e a incidência de tiroteios.</p>
+          <a href="assets/Leonardo_2024_Violencia_Armada.pdf" target="_blank" class="btn">🔍 Ler PDF</a>
+        </div>
+
+        <!-- Exemplo 2 -->
+        <div class="card">
+          <h4>📗 Leonardo, J. P. P. & Cerqueira, D. (2023). <i>Dinâmica espacial da violência letal no Rio de Janeiro</i>.</h4>
+          <p>Trabalho apresentado no Encontro Nacional de Estudos Populacionais — NEPO/UNICAMP. Aplicação de modelos espaciais de risco.</p>
+          <a href="https://example.com/link_publicacao" target="_blank" class="btn">🌐 Acessar</a>
+        </div>
+
+        <!-- Exemplo 3 -->
+        <div class="card">
+          <h4>📙 Leonardo, J. P. P. (2022). <i>Mapas e evidências: a leitura territorial na formulação de políticas públicas</i>.</h4>
+          <p>Capítulo de livro organizado pelo IBGE sobre estatísticas públicas e território.</p>
+          <a href="assets/Leonardo_2022_Mapas_Evidencias.pdf" target="_blank" class="btn">⬇️ Download</a>
+        </div>
+      </div>
+
+      <!-- Ícone Lattes -->
+      <div class="center" style="margin-top: 2rem;">
+        <p>Acesse também meu currículo completo na Plataforma Lattes:</p>
+        <a href="http://lattes.cnpq.br/1234567890123456" target="_blank" title="Currículo Lattes" class="btn">
+          <i class="fa-solid fa-graduation-cap"></i> Currículo Lattes
+        </a>
+      </div>
+    </div>
+  </section>
   <!-- ================================
        🔹 PORTFÓLIO VISUAL
   =================================== -->
@@ -156,23 +197,37 @@
     </div>
   </section>
 
-  <!-- ================================
-       🔹 CONTATO
-  =================================== -->
-  <section id="contato" class="section">
-    <div class="section-content center">
-      <h3>Contato</h3>
-      <p>Interessado em colaborações, pesquisa ou projetos de dados? Vamos conversar.</p>
+<!-- ================================
+     🔹 CONTATO
+=================================== -->
+<section id="contato" class="section">
+  <div class="section-content center">
+    <h3>Contato</h3>
+    <p>Interessado em colaborações, pesquisa ou projetos de dados? Vamos conversar.</p>
 
-      <div class="contact-icons">
-        <a href="mailto:joao.leonard@outlook.com" title="E-mail"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/joaopleonardo/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/joaoleon" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-      </div>
-
-      <a href="assets/curriculo_João_Leonardo.pdf" class="btn">📄 Baixar CV</a>
+    <div class="contact-icons">
+      <a href="mailto:joao.leonard@outlook.com" title="E-mail">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/joaopleonardo/" target="_blank" title="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/joaoleon" target="_blank" title="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
     </div>
-  </section>
+
+    <!-- 🔹 Currículos juntos -->
+    <div class="curriculos" style="margin-top: 1.5rem;">
+      <a href="assets/curriculo_João_Leonardo.pdf" class="btn" target="_blank">
+        📄 Baixar CV
+      </a>
+      <a href="https://lattes.cnpq.br/0725531837532256" class="btn" target="_blank" title="Currículo Lattes" style="margin-left: 10px;">
+        🎓 Currículo Lattes
+      </a>
+    </div>
+  </div>
+</section>
 
   <!-- ================================
        🔹 RODAPÉ
