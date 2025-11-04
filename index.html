@@ -3,115 +3,182 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>João Paulo Pereira Leonardo — Ciência de Dados e Território</title>
-  <link rel="stylesheet" href="style.css">
+  <title>João Paulo Pereira Leonardo — Ciência de Dados, Território e Políticas Públicas</title>
+  
+  <!-- Tipografia e Ícones -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Estilo principal -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Meta tags -->
+  <meta name="description" content="João Leonardo — Doutorando em População, Território e Estatísticas Públicas (ENCE/IBGE). Integra ciência de dados e território para transformar evidências em inteligência aplicada a políticas públicas e inovação social.">
 </head>
 
 <body>
-  <!-- 🔹 Navegação -->
+  <!-- ================================
+       🔹 NAVBAR FIXA
+  =================================== -->
   <nav class="navbar">
-    <div class="nav-left">
+    <div class="nav-container">
       <a href="#hero" class="brand">João Leonardo</a>
-    </div>
-    <div class="nav-right">
-      <a href="#sobre">Sobre</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#portfolio">Portfólio</a>
-      <a href="#contato">Contato</a>
-      <span class="lang-switch">
-        <a href="index.html" class="active">PT</a> |
-        <a href="en.html">EN</a> |
-        <a href="es.html">ES</a>
-      </span>
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+        <span class="lang-switch">
+          <a href="index.html" class="active">PT</a> |
+          <a href="en.html">EN</a> |
+          <a href="es.html">ES</a>
+        </span>
+      </div>
     </div>
   </nav>
 
-  <!-- 🔹 Hero -->
+  <!-- ================================
+       🔹 HERO SECTION
+  =================================== -->
   <header id="hero" class="hero">
-    <div class="hero-content">
-      <img src="assets/logos.png" alt="LOGOS" class="logo">
-      <h1>Ciência de Dados, Território e Políticas Públicas</h1>
-      <p class="tagline">
-        Transformo dados sociais e espaciais em inteligência aplicada ao planejamento, 
-        à inovação e à redução de desigualdades — conectando ciência, território e impacto real.
-      </p>
-      <a href="#projetos" class="btn-hero">Explorar Projetos ↓</a>
+    <div class="hero-grid">
+      <div class="hero-photo">
+        <img src="assets/foto_perfil.png" alt="Foto de João Leonardo" class="profile-photo">
+      </div>
+      <div class="hero-text">
+        <h1>João Paulo Pereira Leonardo</h1>
+        <h2>Ciência de Dados, Território e Políticas Públicas</h2>
+        <p class="tagline">
+          Transformo dados sociais e espaciais em inteligência aplicada ao planejamento, 
+          à inovação e à redução de desigualdades — conectando ciência, território e impacto real.
+        </p>
+        <a href="#projetos" class="btn-hero">Explorar Projetos ↓</a>
+      </div>
     </div>
   </header>
 
-  <!-- 🔹 Sobre -->
-  <section id="sobre" class="section light">
-    <h3>Sobre mim</h3>
-    <p>
-      Sou doutorando em População, Território e Estatísticas Públicas na 
-      <b>Escola Nacional de Ciências Estatísticas (ENCE/IBGE)</b>. 
-      Atuo no desenvolvimento de soluções que unem <b>estatística, ciência de dados e leitura geoespacial</b> 
-      para compreender fenômenos urbanos e orientar políticas públicas.
-    </p>
-    <p>
-      Sou criador do <b>SIG-Seg</b> — plataforma de inteligência geoespacial reconhecida pelo 
-      <b>Ministério da Justiça</b> — e autor do <b>projeto LOGOS</b>, voltado à tradução de evidências 
-      em inteligência territorial e social.
-    </p>
+  <!-- ================================
+       🔹 SOBRE MIM
+  =================================== -->
+  <section id="sobre" class="section section--alt">
+    <div class="section-content">
+      <h3>Sobre mim</h3>
+      <p>
+        Sou doutorando em <b>População, Território e Estatísticas Públicas</b> pela 
+        <b>Escola Nacional de Ciências Estatísticas (ENCE/IBGE)</b>, com trajetória voltada à 
+        integração entre ciência de dados, estatística espacial e políticas públicas.
+      </p>
+      <p>
+        Atuo no desenvolvimento de soluções que unem <b>análise estatística, programação e leitura territorial</b> 
+        para compreender fenômenos urbanos e orientar decisões baseadas em evidências. 
+        Tenho experiência em temas como <b>violência armada, desigualdades sociais, planejamento urbano e inovação pública</b>.
+      </p>
+      <p>
+        Sou criador do <b>SIG-Seg</b> — plataforma de inteligência geoespacial reconhecida pelo 
+        <b>Ministério da Justiça</b> — e autor do <b>projeto LOGOS</b>, que representa minha identidade 
+        autoral dedicada à tradução de dados em conhecimento aplicado.
+      </p>
+    </div>
   </section>
 
-  <!-- 🔹 Projetos -->
-  <section id="projetos" class="section alt">
-    <h3>Projetos e Pesquisas</h3>
-    <div class="cards">
-      <div class="card">
-        <h4>🗺️ SIG-Seg</h4>
-        <p>Plataforma de Inteligência Geoespacial para monitoramento de objetos roubados e análise de padrões territoriais de violência, reconhecida pelo <b>Ministério da Justiça</b>.</p>
+  <!-- ================================
+       🔹 PROJETOS E PESQUISAS
+  =================================== -->
+  <section id="projetos" class="section">
+    <div class="section-content">
+      <h3>Projetos e Pesquisas</h3>
+
+      <div class="cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <h4>🗺️ SIG-Seg</h4>
+          <p>
+            Plataforma de Inteligência Geoespacial para o monitoramento de objetos roubados e análise de padrões territoriais de violência. 
+            Reconhecida pelo <b>Ministério da Justiça</b> no edital “Tecnologias Disruptivas para Segurança Pública”. 
+            Integra mapas interativos, banco de dados e estatísticas em tempo real.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <h4>📊 Tese de Doutorado — Violência Armada e Estrutura Sociodemográfica</h4>
+          <p>
+            Pesquisa em andamento na <b>ENCE/IBGE</b> que analisa a relação entre desigualdades sociais, 
+            estrutura urbana e incidência de eventos armados no Rio de Janeiro (2016–2025).  
+            Utiliza dados do <b>Fogo Cruzado</b> e do <b>Censo 2022</b> com modelagem estatístico-espacial.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <h4>🌍 Projeto LOGOS</h4>
+          <p>
+            Iniciativa autoral que une <b>ciência de dados, design e impacto social</b>.  
+            O LOGOS funciona como identidade e laboratório criativo para o desenvolvimento de metodologias, 
+            visualizações e ferramentas de análise territorial.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       🔹 PORTFÓLIO VISUAL
+  =================================== -->
+  <section id="portfolio" class="section section--alt">
+    <div class="section-content">
+      <h3>Portfólio Visual</h3>
+      <p>Alguns exemplos de mapas, modelos e dashboards desenvolvidos em R, Python e HTML.</p>
+
+      <div class="portfolio-grid">
+        <figure>
+          <img src="assets/mapa1.png" alt="Mapa 1">
+          <figcaption>Mapa de clusters espaciais — Rio de Janeiro</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/mapa2.png" alt="Mapa 2">
+          <figcaption>Padrões sociodemográficos e risco territorial</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/mapa3.png" alt="Mapa 3">
+          <figcaption>Taxas preditas por modelo GLMM — 2016–2025</figcaption>
+        </figure>
       </div>
 
-      <div class="card">
-        <h4>📊 Tese de Doutorado</h4>
-        <p>Pesquisa em andamento na <b>ENCE/IBGE</b> sobre violência armada e estrutura sociodemográfica no Rio de Janeiro (2016–2025), integrando dados do <b>Fogo Cruzado</b> e <b>Censo 2022</b>.</p>
-      </div>
-
-      <div class="card">
-        <h4>🌍 Projeto LOGOS</h4>
-        <p>Identidade autoral que combina <b>ciência de dados, design e impacto social</b>. 
-        Reúne metodologias, visualizações e dashboards voltados à inteligência territorial.</p>
+      <div class="card destaque">
+        <h4>📖 Relatório — Domicílios Chefiados por Mulheres (2010)</h4>
+        <p>
+          Análise territorial da proporção de domicílios chefiados por mulheres no Brasil, 
+          com mapas e indicadores produzidos a partir dos dados do Censo 2010.
+        </p>
+        <a href="assets/Domicilios_Chefiados_por_Mulheres_2010.html" target="_blank" class="btn">🔍 Ver Relatório</a>
       </div>
     </div>
   </section>
 
-  <!-- 🔹 Portfólio -->
-  <section id="portfolio" class="section light">
-    <h3>Portfólio Visual</h3>
-    <p>Exemplos de mapas, modelos e dashboards desenvolvidos em R, Python e HTML.</p>
+  <!-- ================================
+       🔹 CONTATO
+  =================================== -->
+  <section id="contato" class="section">
+    <div class="section-content center">
+      <h3>Contato</h3>
+      <p>Interessado em colaborações, pesquisa ou projetos de dados? Vamos conversar.</p>
 
-    <div class="portfolio-grid">
-      <img src="assets/mapa1.png" alt="Mapa 1">
-      <img src="assets/mapa2.png" alt="Mapa 2">
-      <img src="assets/mapa3.png" alt="Mapa 3">
-    </div>
+      <div class="contact-icons">
+        <a href="mailto:joao.leonard@outlook.com" title="E-mail"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/joaopleonardo/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/joaoleon" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
 
-    <div class="card">
-      <h4>📖 Relatório: Domicílios Chefiados por Mulheres (2010)</h4>
-      <p>Análise territorial com base no Censo 2010, explorando desigualdades de gênero e estrutura domiciliar.</p>
-      <a href="assets/Domicilios_Chefiados_por_Mulheres_2010.html" target="_blank" class="btn">🔍 Ver Relatório</a>
+      <a href="assets/curriculo_João_Leonardo.pdf" class="btn">📄 Baixar CV</a>
     </div>
   </section>
 
-  <!-- 🔹 Contato -->
-  <section id="contato" class="section alt">
-    <h3>Contato</h3>
-    <p>Interessado em colaborações, projetos ou pesquisa? Vamos conversar.</p>
-    <div class="contact-icons">
-      <a href="mailto:joao.leonard@outlook.com" title="E-mail"><i class="fa-solid fa-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/joaopleonardo/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://github.com/joaoleon" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-    </div>
-    <p><a href="assets/curriculo_João_Leonardo.pdf" class="btn">📄 Baixar CV</a></p>
-  </section>
-
-  <!-- 🔹 Rodapé -->
-  <footer>
-    <p>© 2025 João Paulo Pereira Leonardo — Projeto LOGOS</p>
+  <!-- ================================
+       🔹 RODAPÉ
+  =================================== -->
+  <footer class="footer">
+    <p>© 2025 João Paulo Pereira Leonardo — Projeto LOGOS | Data & Territory</p>
   </footer>
 </body>
 </html>
