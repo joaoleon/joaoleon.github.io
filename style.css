@@ -110,73 +110,52 @@ body {
 /* ------------------------------------------------------------
    🏞️ 03. HERO SECTION
 ------------------------------------------------------------ */
+/* HERO - fundo escuro, texto claro */
 .hero {
   padding-top: 5rem;
   min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #e8f6f6, #ffffff 60%);
-}
-@media (prefers-color-scheme: dark) {
-  .hero {
-    background: linear-gradient(135deg, #0e1b2d, #09121f);
-  }
+  background: linear-gradient(135deg, #081027, #0b1b3b 70%);
+  color: #f7f9fa;
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 3rem;
-  align-items: center;
-  max-width: var(--max-width);
-  padding: 2rem;
-}
-@media (max-width: 800px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 1.5rem;
-  }
-}
-
-.profile-photo {
-  width: 240px;
-  height: 240px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid var(--color-primary);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
+/* texto do hero */
 .hero-text h1 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 600;
-  color: var(--color-dark);
+  color: #ffffff; /* branco puro */
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25); /* contraste refinado */
 }
+
 .hero-text h2 {
   font-size: 1.2rem;
   font-weight: 400;
-  color: var(--color-primary);
+  color: #9be4e3; /* turquesa claro LOGOS */
   margin-top: 0.4rem;
 }
+
 .hero-text .tagline {
   margin: 1rem 0 2rem;
-  color: var(--color-muted);
+  color: #e0e6ea; /* cinza-claro suave para boa legibilidade */
   max-width: 600px;
 }
 
 .btn-hero {
-  background: var(--color-primary);
-  color: #fff;
+  background: #00d1d1;
+  color: #0b1b3b;
   padding: 0.8rem 1.6rem;
   border-radius: var(--radius);
   text-decoration: none;
+  font-weight: 600;
   transition: var(--transition);
 }
 .btn-hero:hover {
-  background: var(--color-accent);
+  background: #9be4e3;
+  color: #0b1b3b;
 }
+
 
 /* ------------------------------------------------------------
    🧭 04. SEÇÕES
