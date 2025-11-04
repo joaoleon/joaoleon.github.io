@@ -1,7 +1,7 @@
 # 🌍 João Paulo Pereira Leonardo — Inteligência Territorial e Dados Públicos
 
 Este repositório contém o código-fonte da minha página pessoal hospedada via **GitHub Pages**:
-🔗 [joaopauloleonardo.github.io](https://joaopauloleonardo.github.io)
+🔗 [joaoleon.github.io](https://joaoleon.github.io)
 
 ---
 
