@@ -1,0 +1,115 @@
+/* ===============================
+   🌐 Tema LOGOS - Estilo base
+   =============================== */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* 🔹 Cabeçalho / Hero */
+.hero {
+  background: linear-gradient(160deg, #0B1B3B 0%, #007782 100%);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem 3rem;
+}
+
+.logo {
+  width: 90px;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.hero h2 {
+  margin-top: 0.5rem;
+  font-weight: 300;
+  color: #A5E1E1;
+}
+
+nav {
+  margin-top: 1.5rem;
+}
+
+nav a {
+  color: #00D1D1;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* 🔹 Seções */
+.section {
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.section.alt {
+  background-color: #eef6f6;
+}
+
+.section h3 {
+  color: #0B1B3B;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h4 {
+  color: #007782;
+  margin-top: 0;
+}
+
+/* 🔹 Portfólio Visual */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.portfolio-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* 🔹 Rodapé */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #0B1B3B;
+  color: white;
+  font-size: 0.9rem;
+}
