@@ -1,187 +1,174 @@
-/* =====================================
-   🌐 Tema LOGOS Premium v2.0
-   ===================================== */
-
+/* ======= BASE ======= */
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #fdfdfd;
-  color: #222;
+  font-family: "Inter", sans-serif;
   margin: 0;
-  line-height: 1.6;
+  color: #081027;
+  background: #fff;
+  scroll-behavior: smooth;
 }
 
-/* 🔹 Hero */
+/* ======= NAVBAR ======= */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  z-index: 100;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #081027;
+  margin: 0 0.8rem;
+  font-weight: 500;
+}
+
+.lang-switch a {
+  color: #007782;
+  font-weight: 600;
+}
+.lang-switch .active {
+  text-decoration: underline;
+}
+
+/* ======= HERO ======= */
 .hero {
-  background: linear-gradient(160deg, #0B1B3B 0%, #007782 100%);
-  color: white;
+  height: 100vh;
+  background: linear-gradient(180deg, #e8f6f6 0%, #ffffff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 4rem 1rem 3rem;
-  animation: fadeIn 1s ease-in;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 700px;
 }
 
 .logo {
-  width: 90px;
+  width: 80px;
   margin-bottom: 1rem;
 }
 
 .hero h1 {
-  margin: 0;
-  font-size: 2rem;
   font-weight: 600;
-}
-
-.hero h2 {
-  margin-top: 0.5rem;
-  font-weight: 300;
-  color: #A5E1E1;
+  color: #0b1b3b;
+  margin-bottom: 1rem;
 }
 
 .tagline {
-  font-weight: 300;
-  color: #E8F6F6;
-  margin-top: 1rem;
-  font-size: 1rem;
+  color: #333;
+  margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
-nav {
-  margin-top: 1.5rem;
-}
-
-nav a {
-  color: #00D1D1;
-  margin: 0 12px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-nav a:hover {
-  text-decoration: underline;
-  opacity: 0.8;
-  transition: 0.2s ease;
-}
-
-/* 🔹 Seções */
-.section {
-  padding: 3rem 1rem;
-  max-width: 900px;
-  margin: auto;
-  animation: fadeIn 0.8s ease-in;
-}
-
-.section.alt {
-  background-color: #eef6f6;
-}
-
-.section h3 {
-  color: #0B1B3B;
-  text-align: center;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.section p {
-  max-width: 800px;
-  margin: 0 auto 1.5rem;
-  text-align: justify;
-}
-
-/* 🔹 Cards */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.2rem;
-  margin-top: 2rem;
-}
-
-.card {
-  background: white;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-}
-
-.card h4 {
-  color: #007782;
-  margin-top: 0;
-}
-
-/* 🔹 Portfólio */
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-.portfolio-grid img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
-}
-
-.portfolio-grid img:hover {
-  transform: scale(1.03);
-}
-
-/* 🔹 Botão */
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #00D1D1;
-  color: #0B1B3B;
+.btn-hero {
+  background: #00d1d1;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: 500;
+  transition: 0.3s;
+}
+.btn-hero:hover {
+  background: #009ea0;
 }
 
-.btn:hover {
-  opacity: 0.85;
-  transition: 0.2s ease;
+/* ======= SECTIONS ======= */
+.section {
+  padding: 6rem 2rem;
+  max-width: 900px;
+  margin: auto;
 }
-
-/* 🔹 Ícones sociais */
-.contact-icons {
+.section.alt {
+  background: #f8f9fa;
+}
+.section.light {
+  background: #fff;
+}
+.section h3 {
   text-align: center;
+  color: #0b1b3b;
   margin-bottom: 1.5rem;
 }
 
+/* ======= CARDS ======= */
+.cards {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ======= PORTFOLIO GRID ======= */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.portfolio-grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s, filter 0.3s;
+}
+.portfolio-grid img:hover {
+  transform: scale(1.03);
+  filter: brightness(90%);
+}
+
+/* ======= BOTÕES ======= */
+.btn {
+  display: inline-block;
+  background: #007782;
+  color: #fff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #005569;
+}
+
+/* ======= CONTATO ======= */
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
 .contact-icons a {
-  font-size: 1.5rem;
-  margin: 0 10px;
   color: #007782;
-  transition: color 0.2s ease;
+  font-size: 1.5rem;
+  transition: color 0.3s;
 }
-
 .contact-icons a:hover {
-  color: #00D1D1;
+  color: #00d1d1;
 }
 
-/* 🔹 Rodapé */
+/* ======= FOOTER ======= */
 footer {
   text-align: center;
-  padding: 1rem;
-  background: #0B1B3B;
-  color: white;
   font-size: 0.9rem;
-}
-
-/* 🔹 Animação */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* 🔹 Responsivo */
-@media (max-width: 600px) {
-  .hero h1 { font-size: 1.5rem; }
-  .hero h2 { font-size: 1rem; }
-  nav a { display: inline-block; margin: 6px; }
-  .cards { grid-template-columns: 1fr; }
+  color: #555;
+  padding: 2rem;
+  background: #f8f9fa;
 }
