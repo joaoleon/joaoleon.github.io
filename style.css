@@ -64,7 +64,10 @@ body {
   z-index: 1000;
 }
 @media (prefers-color-scheme: dark) {
-  .navbar { background: rgba(15,25,40,0.8); }
+  .navbar {
+    background: rgba(20,32,48,0.75);
+    backdrop-filter: blur(10px);
+  }
 }
 
 .nav-container {
