@@ -1,11 +1,11 @@
-# 🌍 João Paulo Pereira Leonardo — Inteligência Territorial e Dados Públicos
+# João Paulo Pereira Leonardo — Inteligência Territorial e Dados Públicos
 
 Este repositório contém o código-fonte da minha página pessoal hospedada via **GitHub Pages**:
 🔗 [joaoleon.github.io](https://joaoleon.github.io)
 
 ---
 
-## 💡 Sobre o site
+## Sobre o site
 O site apresenta meu portfólio profissional nas áreas de:
 - Estatística e análise espacial;
 - Políticas públicas e segurança;
@@ -15,7 +15,7 @@ Ele foi desenvolvido em **HTML + CSS**, com tema inspirado na identidade visual 
 
 ---
 
-## 🧩 Estrutura
+## Estrutura
 /
 ├── index.html → Página principal
 ├── style.css → Estilos e tema visual
@@ -24,7 +24,7 @@ Ele foi desenvolvido em **HTML + CSS**, com tema inspirado na identidade visual 
 
 ---
 
-## 🛠️ Tecnologias
+## Tecnologias
 - **HTML5**
 - **CSS3**
 - **GitHub Pages** (hospedagem gratuita)
